@@ -17,6 +17,7 @@ side3sq = rowSums((point2 - point3)^2)
 
 # Obtain 95% CI estimate of obtuse probability with sidessq only
 # Useful for reducing computation time: no sorting required
+
 p_obtuse1 =(mean(side1sq > side2sq + side3sq) 
           + mean(side2sq > side1sq + side3sq) 
           + mean(side3sq > side1sq + side2sq)); p_obtuse1
