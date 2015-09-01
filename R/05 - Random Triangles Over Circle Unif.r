@@ -29,7 +29,7 @@ ycirc[201:402] = -ycirc[201:402]
 # Plot triangles
 
 ggplot() +
-  geom_polygon(aes(x = xcirc, y = ycirc), size = 0.5) +
+  geom_polygon(aes(x = xcirc, y = ycirc), color = "grey20", size = 0.5) +
   geom_polygon(data = triangles, aes(x = x, y = y, color=factor(num)), fill = NA, size = 1) +
   geom_point(data = triangles, aes(x = x, y = y), size = 3, colour = "white", shape = 19) +
   coord_fixed() +
