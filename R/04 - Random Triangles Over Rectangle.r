@@ -4,13 +4,13 @@ library(gridExtra) # For plotting purposes
 set.seed(500)      # For reference purposes: repeatable code
 m = 10             # Number of triangles to simulate
 
-y = runif(3*m, max = 1)         # Initialize y coordinates
+x = runif(3*m, max = 1)         # Initialize x coordinates
 for(i in 2:16)                  # 'i' will represent the ratio used
 {
-  y = c(y, runif(3*m, max = i)) # Progressively closer to 16
+  x = c(x, runif(3*m, max = i)) # Progressively closer to 16
 }
 
-x = runif(3*16*m, max = 16)     # All 16, to increment ratio by 1/16
+y = runif(3*16*m, max = 16)     # All 16, to increment ratio by 1/16
 
 num = rep(c(1:m),16*3)          # Keep track of point-triangle association
 ratio = rep(c(1:16), each = 30) # Keep track of rectangle ratio
