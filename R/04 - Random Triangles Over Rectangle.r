@@ -159,4 +159,4 @@ p16 = ggplot() +
   theme(legend.position = "none") +
   theme(axis.text = element_text(size = 12), axis.title=element_blank())
 
-grid.arrange(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, ncol = 4)
+grid.arrange(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, ncol = 8)
