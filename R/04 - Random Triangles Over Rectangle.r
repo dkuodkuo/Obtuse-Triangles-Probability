@@ -31,7 +31,6 @@ box = data.frame(ratio2, xbox, ybox)
 
 # Plot triangles
 
-
 p1 = ggplot() +
   geom_polygon(data = subset(box, ratio2 == 1), aes(x = xbox, y = ybox)) +
   geom_polygon(data = subset(triangles, ratio == 1), aes(x = x, y = y, color=factor(num)), fill = NA) +
