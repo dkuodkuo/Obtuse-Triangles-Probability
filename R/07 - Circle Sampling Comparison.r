@@ -35,4 +35,4 @@ dens2 = ggplot() +
   theme(axis.text = element_text(size = 12), axis.title=element_blank()) +
   ggtitle("Polar Uniform")
 
-grid.arrange(dens1, dens2)
+grid.arrange(dens1, dens2, ncol = 2)
