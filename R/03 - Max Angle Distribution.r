@@ -37,7 +37,7 @@ maxangle = (180/pi) * acos((min + med - max) / (2 * sqrt(min) * sqrt(med)))
 ggplot() +
   geom_vline(xintercept = 90, colour = "black", size = 1) +
   geom_histogram(aes(x = maxangle, y = ..density.., fill = ..density..), binwidth = 0.5, alpha = 0.7) +
-  scale_fill_gradient("Density", low = "black", high = "green") +
+  scale_fill_gradient("Density", low = "grey20", high = "red") +
   theme(legend.position = "none") +
   scale_x_continuous(breaks = seq(60,180,by=10)) +
   scale_y_continuous(breaks = seq(0,0.015,by=0.001))
