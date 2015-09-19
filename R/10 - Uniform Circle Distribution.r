@@ -2,7 +2,7 @@ library(ggplot2) # For plotting purposes
 set.seed(500)    # For reference purposes: repeatable code
 m = 1000000      # Number of triangles to simulate
 
-# Uniform Rejection Method: Use Rejection Generator from Appendix E
+# Uniform Rejection Method
 xcoord = ycoord = numeric(3*m)
 for(i in 1:(3*m)){
   x = runif(1,min=-1,max=1); y = runif(1,min=-1,max=1)
